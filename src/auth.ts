@@ -27,7 +27,7 @@ app.post("/login", async (req, res) => {
 
   const accessToken = jwt.sign(
     {
-      id: account.id.toString(),
+      account_id: account.id.toString(),
     },
     JWT_SECRET,
     {
